@@ -1,0 +1,45 @@
+.hero {
+  .hero__content {
+    box-shadow: 0 2px 4px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.044);
+    display: flex;
+    justify-content: center;
+
+    table {
+      tr {
+        display: grid;
+        grid-template-columns: 50px 350px 200px 100px 120px 100px;
+
+        th {
+          font-size: 18px;
+          border: 1px solid black;
+          text-align: start;
+          padding: 5px 10px;
+          font-weight: 600;
+          font-family: "Manrope";
+        }
+      }
+
+      .hero__name {
+        margin-top: 10px;
+
+        td {
+          font-size: 17px;
+          border: 1px solid black;
+          text-align: start;
+          padding: 5px 10px;
+          font-weight: 400;
+          font-family: "Manrope";
+        }
+
+        .hero__icon {
+          display: flex;
+          align-items: start;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
