@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import "./Footer.scss"
+import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="container" style={{ textAlign: "center" }}>
       Footer
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
