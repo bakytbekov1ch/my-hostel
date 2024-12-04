@@ -4,12 +4,12 @@ import { Outlet } from "react-router-dom";
 import Footer from "../footer/Footer";
 import "./Layout.scss";
 
-const Layout = () => {
+const Layout = ({  search, setSearch }) => {
   return (
     <div className="layout">
-      <Header />
+      <Header search={search} setSearch={setSearch} />
       <main className="main">
-        <Outlet />
+        <Outlet /> 
       </main>
       <Footer />
     </div>

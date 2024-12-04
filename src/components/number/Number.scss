@@ -1,0 +1,44 @@
+.number {
+  h1 {
+    margin: 15px 0;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Manrope";
+    text-align: center;
+  }
+
+  .number__content {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .number__text {
+      width: 300px;
+      height: 35px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Manrope";
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .number {
+    .number__content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

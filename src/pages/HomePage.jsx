@@ -1,10 +1,10 @@
 import React from "react";
 import Home from "../components/home/Home";
 
-const HomePage = () => {
+const HomePage = ({ filteredData, handleDelete }) => {
   return (
     <div>
-      <Home />
+      <Home filteredData={filteredData} handleDelete={handleDelete} />
     </div>
   );
 };

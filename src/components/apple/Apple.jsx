@@ -20,6 +20,13 @@ const Apple = () => {
     }
   }
 
+  const date = new Date(value.createdAt);
+  const formatDate = date.toLocaleDateString("ru-RU", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+
   useEffect(() => {
     handleProduct();
   }, [id]);
@@ -38,7 +45,7 @@ const Apple = () => {
           </div>
 
           <div className="apple__btns">
-            <h4>{value.createdAt}</h4>
+            <h4>{formatDate}</h4>
             <span>{value.price}c</span>
           </div>
 

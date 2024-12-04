@@ -3,11 +3,7 @@ import React from "react";
 import "./Footer.scss";
 
 const Footer = () => {
-  return (
-    <div className="container" style={{ textAlign: "center" }}>
-      Footer
-    </div>
-  );
+  return <span style={{ textAlign: "center" }}>Footer</span>;
 };
 
 export default Footer;
